@@ -6,9 +6,7 @@ class Clock
   static void Calculator(float hours, float minutes)
   {
     float hoursDegree = (hours + (minutes/60))*30;
-    Console.WriteLine(hoursDegree);
     float minutesDegree = (minutes)*6;
-    Console.WriteLine(minutesDegree);
     float angleRough = 0;
     if (hoursDegree >= minutesDegree)
       {
@@ -27,7 +25,7 @@ class Clock
       angleRough = 360 - angleRough;
     }
     string angle = angleRough.ToString();
-    Console.WriteLine("The angle between the hour and minute hand is: " + angle);
+    Console.WriteLine("The angle between the hour and minute hand is: " + angle + " degrees");
   }
 
 
